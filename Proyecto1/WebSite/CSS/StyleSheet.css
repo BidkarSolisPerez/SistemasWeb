@@ -1,0 +1,12 @@
+body #navigation .navbar-nav li > a {
+  text-transform: capitalize;
+  color: #333;
+  transition: background-color .2s, color .2s; }
+  body #navigation .navbar-nav li > a:hover, body #navigation .navbar-nav li > a:focus {
+    background-color: #333;
+    color: #fff; }
+body #navigation .navbar-nav li.active > a {
+  background-color: #333;
+  color: #fff; }
+
+/*# sourceMappingURL=StyleSheet.css.map */
