@@ -8,8 +8,8 @@ namespace WebAppSistemas.Controllers
 {
     public class AboutUsController : Controller
     {
-        // GET: AboutUs
-        public ActionResult Index()
+        // GET: About
+        public ActionResult About()
         {
             return View();
         }

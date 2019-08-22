@@ -1,0 +1,38 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+@model WebAppSistemas.Models.FormContactUsModel
+<h2>Contact Us</h2>
+
+@using (Html.BeginForm("FormContact", "ContactUs", FormMethod.Post))
+{
+    <table>
+        <tr>
+            <td>
+                Enter your Name:
+            </td>
+            <td>
+                @Html.TextBoxFor(m => m.name)
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Enter your Last Name:
+            </td>
+            <td>
+                @Html.TextBoxFor(m => m.apellidos)
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Enter your Feedback or concern:
+            </td>
+            <td>
+                @Html.TextAreaFor(m => m.feedback, new { @class = "FormContact" })
+            </td>
+        </tr>
+    </table>
+}
+
