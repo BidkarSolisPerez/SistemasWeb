@@ -8,7 +8,7 @@ using WebApplication1.Models.ContactFormViewModels;
 
 namespace WebApplication1.Controllers
 {
-    public class FormContactController : Controller
+    public class ContactUsController : Controller
     {
         // GET: FormContact
         public ActionResult Index()
