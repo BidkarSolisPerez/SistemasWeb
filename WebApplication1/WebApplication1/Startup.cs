@@ -64,7 +64,7 @@ namespace WebApplication1
                     template: "{controller=Home}/{action=Index}/{id?}");
                 routes.MapRoute(
                     name: "contactUs",
-                    template: "{controller=ContactUsController}/{action=Index}/{id?}");
+                    template: "{controller=ContactUs}/{action=Index}/{id?}");
             });
         }
     }
