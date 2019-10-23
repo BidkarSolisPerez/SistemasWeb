@@ -1,4 +1,4 @@
-﻿@model Proyecto1.Models.Product
+﻿@model Proyecto1.Models.Products
 
 @{
     ViewBag.Title = "Details";
@@ -8,31 +8,31 @@
 <h2>Details</h2>
 
 <div>
-    <h4>Product</h4>
+    <h4>Products</h4>
     <hr />
     <dl class="dl-horizontal">
         <dt>
-            @Html.DisplayNameFor(model => model.Category)
+            @Html.DisplayNameFor(model => model.ProductCategory)
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.Category)
+            @Html.DisplayFor(model => model.ProductCategory)
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.Name)
+            @Html.DisplayNameFor(model => model.ProductName)
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.Name)
+            @Html.DisplayFor(model => model.ProductName)
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.Description)
+            @Html.DisplayNameFor(model => model.ProductDescription)
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.Description)
+            @Html.DisplayFor(model => model.ProductDescription)
         </dd>
 
         <dt>
@@ -46,6 +46,6 @@
     </dl>
 </div>
 <p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.Id_product }) |
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Product_ID }) |
     @Html.ActionLink("Back to List", "Index")
 </p>

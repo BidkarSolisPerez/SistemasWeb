@@ -8,6 +8,16 @@ CREATE TABLE Products
     PRIMARY KEY (Produc_ID)
 );
 
+CREATE TABLE ContactUs
+(
+    Id int NOT NULL Identity,
+    Name varchar(255),
+    Email varchar(255) NOT NULL,
+    Comments varchar(255),
+    PRIMARY KEY (Id)
+);
+
+
 Insert INTO dbo.Products
     (ProductCategory,ProductName,ProductDescription,price)
 values

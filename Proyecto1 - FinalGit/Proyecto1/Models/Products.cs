@@ -15,16 +15,18 @@ namespace Proyecto1.Models
 using System;
     using System.Collections.Generic;
     
-public partial class ContactUs
+public partial class Products
 {
 
-    public int Id { get; set; }
+    public int Product_ID { get; set; }
 
-    public string Name { get; set; }
+    public string ProductCategory { get; set; }
 
-    public string Email { get; set; }
+    public string ProductName { get; set; }
 
-    public string Comments { get; set; }
+    public string ProductDescription { get; set; }
+
+    public int Price { get; set; }
 
 }
 
