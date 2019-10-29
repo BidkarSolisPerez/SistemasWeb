@@ -7,6 +7,10 @@
       <Diagram DiagramId="0bf680477c0d43e99e38fcf5a3531268" Name="Diagram1">
         <EntityTypeShape EntityType="Proyecto1Model.ContactUs" Width="1.5" PointX="1" PointY="1.125" IsExpanded="true" />
         <EntityTypeShape EntityType="Proyecto1Model.Products" Width="1.5" PointX="3.375" PointY="0.75" />
+        <EntityTypeShape EntityType="Proyecto1Model.ListaVenta" Width="1.5" PointX="5.625" PointY="0.75" />
+        <EntityTypeShape EntityType="Proyecto1Model.Venta" Width="1.5" PointX="3.375" PointY="3.875" />
+        <AssociationConnector Association="Proyecto1Model.FK__ListaVent__Produ__4CA06362" />
+        <AssociationConnector Association="Proyecto1Model.FK__ListaVent__Venta__4BAC3F29" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

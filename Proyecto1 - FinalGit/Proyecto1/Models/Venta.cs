@@ -12,19 +12,19 @@ namespace Proyecto1.Models
     using System;
     using System.Collections.Generic;
     
-    public partial class Products
+    public partial class Venta
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public Products()
+        public Venta()
         {
             this.ListaVenta = new HashSet<ListaVenta>();
         }
     
-        public int Product_ID { get; set; }
-        public string ProductCategory { get; set; }
-        public string ProductName { get; set; }
-        public string ProductDescription { get; set; }
-        public int Price { get; set; }
+        public int Id { get; set; }
+        public Nullable<System.DateTime> DiaVenta { get; set; }
+        public Nullable<double> Subtotal { get; set; }
+        public Nullable<double> Iva { get; set; }
+        public Nullable<double> Total { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<ListaVenta> ListaVenta { get; set; }

@@ -12,11 +12,15 @@ namespace Proyecto1.Models
     using System;
     using System.Collections.Generic;
     
-    public partial class ContactUs
+    public partial class ListaVenta
     {
         public int Id { get; set; }
-        public string Name { get; set; }
-        public string Email { get; set; }
-        public string Comments { get; set; }
+        public Nullable<int> VentaId { get; set; }
+        public Nullable<int> Product_ID { get; set; }
+        public Nullable<int> Cantidad { get; set; }
+        public Nullable<double> Total { get; set; }
+    
+        public virtual Products Products { get; set; }
+        public virtual Venta Venta { get; set; }
     }
 }

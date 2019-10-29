@@ -13,6 +13,9 @@
 <table class="table">
     <tr>
         <th>
+            @Html.DisplayNameFor(model => model.Product_ID)
+        </th>
+        <th>
             @Html.DisplayNameFor(model => model.ProductCategory)
         </th>
         <th>
@@ -28,25 +31,29 @@
     </tr>
 
 @foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.ProductCategory)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.ProductName)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.ProductDescription)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Price)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.Product_ID }) |
-            @Html.ActionLink("Details", "Details", new { id=item.Product_ID }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.Product_ID })
-        </td>
-    </tr>
+<tr>
+    <td>
+        @Html.DisplayFor(modelItem => item.Product_ID)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.ProductCategory)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.ProductName)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.ProductDescription)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Price)
+    </td>
+    <td>
+        @Html.ActionLink("Agregar a Carro", "AgregaCarrito", "Carrito", new { id = item.Product_ID }, null) |
+        @Html.ActionLink("Edit", "Edit", new { id = item.Product_ID }) |
+        @Html.ActionLink("Details", "Details", new { id = item.Product_ID }) |
+        @Html.ActionLink("Delete", "Delete", new { id = item.Product_ID })
+    </td>
+</tr>
 }
 
 </table>
